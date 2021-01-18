@@ -12,7 +12,7 @@ Vagrant.configure("2") do |config|
         vb.cpus = 1
         vb.name = "ubuntu1"
       end
-      cfg.vm.box = "bento/ubuntu-18.04"
+      cfg.vm.box = "fonger9/ubuntu-20.04"
       cfg.vm.hostname = "ubuntu1"
       cfg.vm.network :private_network, ip: "192.168.38.105", gateway: "192.168.38.1", dns: "8.8.8.8"
       cfg.vm.network "forwarded_port", guest: 22, host: 5221
@@ -25,7 +25,7 @@ Vagrant.configure("2") do |config|
         vb.cpus = 1
         vb.name = "ubuntu2"
       end
-      cfg.vm.box = "bento/ubuntu-18.04"
+      cfg.vm.box = "fonger9/ubuntu-20.04"
       cfg.vm.hostname = "ubuntu2"
       cfg.vm.network :private_network, ip: "192.168.38.106", gateway: "192.168.38.1", dns: "8.8.8.8"
       cfg.vm.network "forwarded_port", guest: 22, host: 5222
@@ -38,7 +38,7 @@ Vagrant.configure("2") do |config|
         vb.cpus = 1
         vb.name = "ubuntu3"
       end
-      cfg.vm.box = "bento/ubuntu-18.04"
+      cfg.vm.box = "fonger9/ubuntu-20.04"
       cfg.vm.hostname = "ubuntu3"
       cfg.vm.network :private_network, ip: "192.168.38.107", gateway: "192.168.38.1", dns: "8.8.8.8"
       cfg.vm.network "forwarded_port", guest: 22, host: 5223
